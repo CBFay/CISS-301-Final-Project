@@ -57,6 +57,13 @@ class MorseListener {
 	// 1 : Short
 	// 2 : Long
 	// 3 : Stop
+	
+	// enables getInput() and instantiates stream
+	public void listen() {
+		if (!listening)
+			stream = new LinkedList<>();
+			listening = true;
+	}
 
 	// call this method for each stroke or wait
 	// acceptable values are 0, 1, 2.
@@ -102,13 +109,6 @@ class MorseListener {
 		}
 		
 		return ""; // this should never happen
-	}
-	
-	// enables getInput() and instantiates stream
-	public void listen() {
-		if (!listening)
-			stream = new LinkedList<>();
-			listening = true;
 	}
 	
 	// disables getInput() and decodes the Morse String
