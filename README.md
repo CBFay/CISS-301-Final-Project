@@ -1,3 +1,9 @@
 # CISS-301-Final-Project
 
 MorseGUI class should take user input in the form of button presses to call methods from MorseListener, which decodes Morse Code strokes as english characters and spaces. 
+
+# MorseListener.java
+  Utility class that provides functionality for storing input and interpreting output.
+  
+# morsegui.java 
+  Provides user interface via the awt and swing packages. Creates an instance of MorseListener.
